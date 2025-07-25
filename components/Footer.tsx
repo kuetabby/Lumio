@@ -1,20 +1,29 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-cyber-primary/30 relative">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-screen-xl mx-auto">
           {/* Main Footer Content */}
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div className="col-span-2">
-              <h3 className="text-2xl font-bold font-mono mb-4">
-                <span className="cyber-text-glow mr-1">LUMIO</span>
-                <span className="text-cyber-secondary">AI</span>
-              </h3>
+              <div className="flex items-center mb-2">
+                <Image
+                  src="/Logo.jpg"
+                  alt="lumio"
+                  width={100}
+                  height={100}
+                  className="w-[50px] h-auto"
+                />
+                <h3 className="text-2xl font-bold font-mono ml-2">
+                  <span className="cyber-text-glow mr-1">LUMIO</span>
+                  <span className="text-cyber-secondary">AI</span>
+                </h3>
+              </div>
               <p className="text-sm font-mono text-gray-300 leading-relaxed max-w-md">
                 Smarter tools for everyday creators.
               </p>

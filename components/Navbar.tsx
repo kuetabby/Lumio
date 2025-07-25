@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,15 +52,21 @@ const Navbar = () => {
             : "bg-cyber-dark/80 backdrop-blur-sm"
         }`}
       >
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-4 2xl:px-0 py-3 max-w-screen-xl">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link
-              href="/"
-              className="text-xl font-bold font-mono z-50 relative"
-            >
-              <span className="cyber-text-glow mr-1">LUMIO</span>
-              <span className="text-cyber-secondary">AI</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/Logo.jpg"
+                alt="lumio"
+                width={100}
+                height={100}
+                className="w-[50px] h-auto"
+              />
+              {/* Logo */}
+              <div className="text-xl font-bold font-mono z-50 relative ml-">
+                <span className="cyber-text-glow mr-1">LUMIO</span>
+                <span className="text-cyber-secondary">AI</span>
+              </div>
             </Link>
 
             {/* Desktop Navigation Items */}
