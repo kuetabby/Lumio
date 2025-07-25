@@ -29,6 +29,7 @@ const Navbar = () => {
     { name: "ABOUT", href: "#about", icon: "ℹ️" },
     { name: "FEATURES", href: "#features", icon: "⚡" },
     { name: "ROADMAP", href: "#roadmap", icon: "🛣️" },
+    { name: "WHITEPAPER", href: "/whitepaper", icon: "📄" },
     // { name: "FAQ", href: "#faq", icon: "❓" },
   ];
 
