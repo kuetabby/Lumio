@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Lumio AI",
-  description:
-    "Build faster, think clearer with AI that stays out of your way.",
+  description: "Build faster, think clearer with AI that stays out of your way",
 };
 
 export default function RootLayout({
