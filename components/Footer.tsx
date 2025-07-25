@@ -113,7 +113,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#docs"
+                    href="/whitepaper"
                     className="text-gray-300 hover:text-cyber-primary transition-colors"
                   >
                     Documentation
