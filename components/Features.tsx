@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const Features = () => {
   const features = [
     // {
@@ -135,9 +137,15 @@ const Features = () => {
             <p className="text-cyber-secondary font-mono mb-4">
               Ready to build smarter?
             </p>
-            <button className="cyber-button-secondary text-lg px-8 py-3">
-              START YOUR JOURNEY
-            </button>
+            <Link
+              href="https://t.me/LumioGeneratorBot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="cyber-button-secondary text-lg px-8 py-3">
+                START YOUR JOURNEY
+              </button>
+            </Link>
           </div>
         </div>
       </div>

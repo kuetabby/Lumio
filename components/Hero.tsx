@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -112,10 +113,15 @@ const Hero = () => {
         <p className="text-base sm:text-lg md:text-xl mb-6 text-cyber-secondary font-mono">
           -
         </p>
-
-        <button className="cyber-button-secondary text-base sm:text-lg px-8 sm:px-12 py-3 sm:py-4 hover:animate-pulse-cyber mb-6">
-          CLICK HERE TO START
-        </button>
+        <Link
+          href="https://t.me/LumioGeneratorBot"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="cyber-button-secondary text-base sm:text-lg px-8 sm:px-12 py-3 sm:py-4 hover:animate-pulse-cyber mb-6">
+            CLICK HERE TO START
+          </button>
+        </Link>
       </div>
 
       {/* Floating Elements */}

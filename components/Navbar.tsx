@@ -84,8 +84,10 @@ const Navbar = () => {
 
               {/* Launch IDE Button - Special Style */}
               <Link
-                href="#lumio"
+                href="https://t.me/LumioGeneratorBot"
                 className="cyber-button-secondary text-xs px-6 py-2 ml-2 hover:scale-105 transition-transform"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 🛠️ LAUNCH Lumio
               </Link>
