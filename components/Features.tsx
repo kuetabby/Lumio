@@ -2,42 +2,77 @@
 
 const Features = () => {
   const features = [
-    {
-      icon: "🔍",
-      title: "ADDRESS VALIDATION",
-      description: "Quickly verify the validity of Solana wallet addresses.",
-      status: "ACTIVE",
-    },
-    {
-      icon: "📈",
-      title: "REAL-TIME ANALYTICS",
-      description: "Access real-time metrics on your Solana transactions.",
-      status: "ACTIVE",
-    },
-    {
-      icon: "🔐",
-      title: "SECURITY MONITORING",
-      description: "Real-time assessments of your application’s security.",
-      status: "MONITORING",
-    },
+    // {
+    //   icon: "🔍",
+    //   title: "ADDRESS VALIDATION",
+    //   description: "Quickly verify the validity of Solana wallet addresses.",
+    //   status: "ACTIVE",
+    // },
     {
       icon: "📝",
-      title: "SMART CONTRACT TEMPLATES",
-      description: "Easily create and manage common smart contract templates.",
-      status: "BETA",
-    },
-    {
-      icon: "⚙️",
-      title: "DEBUGGING TOOLS",
-      description: "Advanced tools for debugging your Solana applications.",
+      title: "LumioGen™",
+      description:
+        "Smart content generator for fast, polished outputs. From tweets to essays — just prompt and go.",
       status: "ACTIVE",
     },
     {
-      icon: "🛡️",
-      title: "POST-QUANTUM SECURITY",
-      description: "Implement cryptographic defenses against quantum threats.",
+      icon: "🎨",
+      title: "VisionLight™",
+      description:
+        "Generate sharp, expressive images from text with full creative control.",
+      status: "ACTIVE",
+    },
+    {
+      icon: "💻",
+      title: "SyntaxGlow™",
+      description:
+        "Multilingual code assistant built to help you debug, complete, and explore ideas faster.",
+      status: "ACTIVE",
+    },
+    {
+      icon: "💾",
+      title: "Daily Points System",
+      description:
+        "3 points daily for every tool. Use them or stack them with Lumio Premium.",
+      status: "ACTIVE",
+    },
+    {
+      icon: "💎",
+      title: "Premium Loop",
+      description:
+        "Every premium unlock powers the ecosystem — liquidity, buybacks, and upgrades.",
       status: "DEVELOPMENT",
     },
+    // {
+    //   icon: "📈",
+    //   title: "REAL-TIME ANALYTICS",
+    //   description: "Access real-time metrics on your Solana transactions.",
+    //   status: "ACTIVE",
+    // },
+    // {
+    //   icon: "🔐",
+    //   title: "SECURITY MONITORING",
+    //   description: "Real-time assessments of your application’s security.",
+    //   status: "MONITORING",
+    // },
+    // {
+    //   icon: "📝",
+    //   title: "SMART CONTRACT TEMPLATES",
+    //   description: "Easily create and manage common smart contract templates.",
+    //   status: "BETA",
+    // },
+    // {
+    //   icon: "⚙️",
+    //   title: "DEBUGGING TOOLS",
+    //   description: "Advanced tools for debugging your Solana applications.",
+    //   status: "ACTIVE",
+    // },
+    // {
+    //   icon: "🛡️",
+    //   title: "POST-QUANTUM SECURITY",
+    //   description: "Implement cryptographic defenses against quantum threats.",
+    //   status: "DEVELOPMENT",
+    // },
   ];
 
   return (
@@ -81,7 +116,7 @@ const Features = () => {
                 <h3 className="text-xl font-bold mb-3 text-cyber-primary group-hover:cyber-text-glow transition-all duration-300">
                   {feature.title}
                 </h3>
-                <p className="text-sm font-mono text-gray-300 leading-relaxed">
+                <p className="text-sm font-mono text-gray-300 leading-relaxed h-[100px]">
                   {feature.description}
                 </p>
 
@@ -98,7 +133,7 @@ const Features = () => {
           {/* Bottom CTA */}
           <div className="text-center mt-12">
             <p className="text-cyber-secondary font-mono mb-4">
-              Ready to dive into Solana development?
+              Ready to build smarter?
             </p>
             <button className="cyber-button-secondary text-lg px-8 py-3">
               START YOUR JOURNEY

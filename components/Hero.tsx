@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "LUMIO SOLANA IDE";
+  const fullText = "LUMIO AI";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -36,8 +37,15 @@ const Hero = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         {/* IDE Icon */}
         <div className="mb-8 flex justify-center">
-          <div className="cyber-panel w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
-            <span className="text-2xl sm:text-3xl">🛠️</span>
+          <div className="cyber-panel w-[150px] h-auto flex items-center justify-center">
+            <Image
+              src="/Logo.jpg"
+              alt="lumio"
+              width={100}
+              height={100}
+              className="w-full h-auto"
+            />
+            {/* <span className="text-2xl sm:text-3xl">🛠️</span> */}
           </div>
         </div>
 
@@ -48,29 +56,33 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-base sm:text-lg md:text-xl mb-8 text-cyber-secondary font-mono">
-          Build, test, and deploy Solana applications seamlessly!
+          {/* Build, test, and deploy Solana applications seamlessly! */}
+          Create, iterate, and launch with AI-powered tools made for speed and
+          flow.
         </p>
 
         {/* How to Use and Useful Commands - Responsive Layout */}
-        <div className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 mb-6">
+        <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 mb-6">
           {/* How to Use Section */}
-          <div className="cyber-panel max-w-md text-left flex-1 md:mr-2">
+          <div className="cyber-panel max-w-screen-sm text-left flex-1 md:mr-2">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 text-center cyber-text-glow">
               HOW TO USE:
             </h2>
 
             <div className="space-y-2 text-xs sm:text-sm font-mono">
-              <p>🔸 Write smart contracts with ease</p>
-              <p>🔸 Test your code in a simulated environment!</p>
-              <p>🔸 Deploy your applications to the Solana blockchain</p>
-              <p>🔸 Use the integrated debugger for troubleshooting</p>
-              <p>🔸 Access official Solana documentation and resources</p>
-              <p>🔸 Collaborate with others in real-time</p>
+              <p>
+                🔸 Choose your tool — LumioGen™, VisionLight™, or SyntaxGlow™
+              </p>
+              <p>🔸 Type what you need — content, code, or creative prompt</p>
+              <p>🔸 Hit generate — get results instantly with no fluff</p>
+              <p>
+                🔸 Tweak or rerun — refine your outputs with smart iterations
+              </p>
             </div>
           </div>
 
           {/* Useful Commands Section */}
-          <div className="cyber-panel max-w-md text-left flex-1 md:ml-2">
+          {/* <div className="cyber-panel max-w-md text-left flex-1 md:ml-2">
             <h3 className="text-lg sm:text-xl font-bold mb-4 cyber-text-glow">
               USEFUL COMMANDS:
             </h3>
@@ -93,10 +105,14 @@ const Hero = () => {
                 <span className="text-cyber-secondary">CTRL + D</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Launch IDE Button */}
+        <p className="text-base sm:text-lg md:text-xl mb-6 text-cyber-secondary font-mono">
+          -
+        </p>
+
         <button className="cyber-button-secondary text-base sm:text-lg px-8 sm:px-12 py-3 sm:py-4 hover:animate-pulse-cyber mb-6">
           CLICK HERE TO START
         </button>

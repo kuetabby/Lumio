@@ -7,7 +7,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 cyber-text-glow">
-            ABOUT THE IDE
+            ABOUT LUMIO
           </h2>
 
           {/* Main Content */}
@@ -15,47 +15,47 @@ const About = () => {
             {/* IDE Description */}
             <div className="cyber-panel">
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-cyber-secondary">
-                LUMIO SOLANA IDE
+                LUMIO AI
               </h3>
               <p className="text-sm font-mono leading-relaxed mb-4">
-                In the evolving world of blockchain technology, Lumio provides
-                developers with a seamless environment to create, test, and
-                deploy applications on the Solana blockchain. Our IDE is
-                designed to help you navigate the complexities of smart contract
-                development with ease.
+                Lumio AI is a daily-use AI workspace built for creators, coders,
+                and innovators. Every day, you get free usage points for core
+                tools designed to accelerate your ideas — without friction,
+                fluff, or wasted time. Whether you're writing, generating, or
+                coding — Lumio has your back.
               </p>
-              <p className="text-sm font-mono leading-relaxed">
+              {/* <p className="text-sm font-mono leading-relaxed">
                 Experience cutting-edge tools and features that enhance your
                 workflow and facilitate coding in a robust, user-friendly
                 interface.
-              </p>
+              </p> */}
             </div>
 
             {/* Features */}
             <div className="cyber-panel">
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-cyber-secondary">
-                IDE FEATURES
+                Workspace FEATURES
               </h3>
               <ul className="space-y-2 text-sm font-mono">
                 <li className="flex items-center">
                   <span className="text-cyber-primary mr-2">▶</span>
-                  Real-time code validation and linting
+                  LumioGen™
                 </li>
                 <li className="flex items-center">
                   <span className="text-cyber-primary mr-2">▶</span>
-                  Built-in debugging tools for smart contracts
+                  VisionLight™
                 </li>
                 <li className="flex items-center">
                   <span className="text-cyber-primary mr-2">▶</span>
-                  Access to official Solana documentation
+                  SyntaxGlow™
                 </li>
                 <li className="flex items-center">
                   <span className="text-cyber-primary mr-2">▶</span>
-                  Integrated version control
+                  Daily Points System
                 </li>
                 <li className="flex items-center">
                   <span className="text-cyber-primary mr-2">▶</span>
-                  Collaborative coding features
+                  Premium Loop
                 </li>
               </ul>
             </div>
@@ -65,34 +65,34 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
             <div className="cyber-panel text-center">
               <div className="text-2xl sm:text-3xl font-bold text-cyber-primary mb-2">
-                100+
+                1M+
               </div>
-              <div className="text-xs sm:text-sm text-cyber-secondary">
-                LINES OF CODE WRITTEN IN BETA
+              <div className="text-xs sm:text-sm text-cyber-secondary uppercase">
+                generations powered by LumioGen™
               </div>
             </div>
             <div className="cyber-panel text-center">
               <div className="text-2xl sm:text-3xl font-bold text-cyber-primary mb-2">
-                200+
+                350K+
               </div>
-              <div className="text-xs sm:text-sm text-cyber-secondary">
-                TEST CASES PASSED
+              <div className="text-xs sm:text-sm text-cyber-secondary uppercase">
+                image renders via VisionLight™
+              </div>
+            </div>
+            <div className="cyber-panel text-center">
+              <div className="text-2xl sm:text-3xl font-bold text-cyber-primary mb-2">
+                50K+
+              </div>
+              <div className="text-xs sm:text-sm text-cyber-secondary uppercase">
+                code snippets completed using SyntaxGlow™
               </div>
             </div>
             <div className="cyber-panel text-center">
               <div className="text-2xl sm:text-3xl font-bold text-cyber-primary mb-2">
                 99.9%
               </div>
-              <div className="text-xs sm:text-sm text-cyber-secondary">
-                UPTIME
-              </div>
-            </div>
-            <div className="cyber-panel text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-cyber-primary mb-2">
-                24/7
-              </div>
-              <div className="text-xs sm:text-sm text-cyber-secondary">
-                SUPPORT
+              <div className="text-xs sm:text-sm text-cyber-secondary uppercase">
+                uptime across all tools
               </div>
             </div>
           </div>

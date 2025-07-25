@@ -3,53 +3,78 @@
 const Roadmap = () => {
   const roadmapItems = [
     {
-      phase: "PHASE 01",
+      phase: "PHASE 1",
       title: "FOUNDATION",
-      status: "COMPLETED",
-      date: "Q1 2025",
-      items: [
-        "Core IDE features",
-        "Solana wallet integration",
-        "Basic smart contract templates",
-        "User-friendly interface design",
-      ],
-    },
-    {
-      phase: "PHASE 02",
-      title: "FEATURE ENHANCEMENTS",
       status: "IN PROGRESS",
-      date: "Q2 2025",
-      items: [
-        "Built-in debugging tools",
-        "Real-time code validation",
-        "Version control integration",
-        "Collaborative coding features",
-      ],
+      // date: "Q1 2025",
+      items: ["Core tools", "Points system", "Early feedback loop"],
     },
     {
-      phase: "PHASE 03",
-      title: "ADVANCED TOOLS",
+      phase: "PHASE 2",
+      title: "EXPAND",
       status: "PLANNED",
-      date: "Q3 2025",
-      items: [
-        "AI-assisted coding suggestions",
-        "Customizable templates",
-        "Performance analytics dashboard",
-        "Integrated testing framework",
-      ],
+      // date: "Q1 2025",
+      items: ["Premium unlocks", "UI personalization", "Community leaderboard"],
     },
     {
-      phase: "PHASE 04",
+      phase: "PHASE 3",
       title: "EVOLUTION",
       status: "FUTURE",
-      date: "Q4 2025",
+      // date: "Q1 2025",
       items: [
-        "Cross-platform support",
-        "Enhanced security features",
-        "Community-driven plugins",
-        "Full-scale documentation and tutorials",
+        "Agent-based workflows",
+        "Workspace collaboration",
+        "API access for advanced users",
       ],
     },
+    // {
+    //   phase: "PHASE 01",
+    //   title: "FOUNDATION",
+    //   status: "COMPLETED",
+    //   date: "Q1 2025",
+    //   items: [
+    //     "Core IDE features",
+    //     "Solana wallet integration",
+    //     "Basic smart contract templates",
+    //     "User-friendly interface design",
+    //   ],
+    // },
+    // {
+    //   phase: "PHASE 02",
+    //   title: "FEATURE ENHANCEMENTS",
+    //   status: "IN PROGRESS",
+    //   date: "Q2 2025",
+    //   items: [
+    //     "Built-in debugging tools",
+    //     "Real-time code validation",
+    //     "Version control integration",
+    //     "Collaborative coding features",
+    //   ],
+    // },
+    // {
+    //   phase: "PHASE 03",
+    //   title: "ADVANCED TOOLS",
+    //   status: "PLANNED",
+    //   date: "Q3 2025",
+    //   items: [
+    //     "AI-assisted coding suggestions",
+    //     "Customizable templates",
+    //     "Performance analytics dashboard",
+    //     "Integrated testing framework",
+    //   ],
+    // },
+    // {
+    //   phase: "PHASE 04",
+    //   title: "EVOLUTION",
+    //   status: "FUTURE",
+    //   date: "Q4 2025",
+    //   items: [
+    //     "Cross-platform support",
+    //     "Enhanced security features",
+    //     "Community-driven plugins",
+    //     "Full-scale documentation and tutorials",
+    //   ],
+    // },
   ];
 
   return (
@@ -109,9 +134,9 @@ const Roadmap = () => {
                       <h3 className="text-2xl font-bold mb-2 text-cyber-primary">
                         {item.title}
                       </h3>
-                      <p className="text-cyber-secondary text-sm font-mono mb-4">
+                      {/* <p className="text-cyber-secondary text-sm font-mono mb-4">
                         {item.date}
-                      </p>
+                      </p> */}
 
                       {/* Items List */}
                       <ul className="space-y-2">

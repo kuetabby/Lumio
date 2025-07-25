@@ -28,7 +28,7 @@ const Navbar = () => {
     { name: "ABOUT", href: "#about", icon: "ℹ️" },
     { name: "FEATURES", href: "#features", icon: "⚡" },
     { name: "ROADMAP", href: "#roadmap", icon: "🛣️" },
-    { name: "FAQ", href: "#faq", icon: "❓" },
+    // { name: "FAQ", href: "#faq", icon: "❓" },
   ];
 
   const handleMobileMenuClick = (href: string) => {
@@ -58,8 +58,8 @@ const Navbar = () => {
               href="/"
               className="text-xl font-bold font-mono z-50 relative"
             >
-              <span className="cyber-text-glow">LUMIO</span>
-              <span className="text-cyber-secondary">IDE</span>
+              <span className="cyber-text-glow mr-1">LUMIO</span>
+              <span className="text-cyber-secondary">AI</span>
             </Link>
 
             {/* Desktop Navigation Items */}
@@ -76,10 +76,10 @@ const Navbar = () => {
 
               {/* Launch IDE Button - Special Style */}
               <Link
-                href="#ide"
+                href="#lumio"
                 className="cyber-button-secondary text-xs px-6 py-2 ml-2 hover:scale-105 transition-transform"
               >
-                🛠️ LAUNCH IDE
+                🛠️ LAUNCH Lumio
               </Link>
             </div>
 
@@ -130,11 +130,11 @@ const Navbar = () => {
 
                 {/* Launch IDE Button - Mobile */}
                 <button
-                  onClick={() => handleMobileMenuClick("#ide")}
+                  onClick={() => handleMobileMenuClick("#lumio")}
                   className="cyber-button-secondary text-sm px-4 py-3 w-full hover:scale-105 transition-all duration-300 flex items-center gap-3 mt-4"
                 >
                   <span className="text-lg">🛠️</span>
-                  <span>LAUNCH IDE</span>
+                  <span>LAUNCH Lumio</span>
                 </button>
               </div>
             </div>

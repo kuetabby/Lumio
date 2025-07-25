@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-cyber-primary/30 relative">
@@ -10,13 +12,14 @@ const Footer = () => {
             {/* Brand */}
             <div className="col-span-2">
               <h3 className="text-2xl font-bold font-mono mb-4">
-                <span className="cyber-text-glow">LUMIO</span>
-                <span className="text-cyber-secondary"> SOLANA IDE</span>
+                <span className="cyber-text-glow mr-1">LUMIO</span>
+                <span className="text-cyber-secondary">AI</span>
               </h3>
               <p className="text-sm font-mono text-gray-300 leading-relaxed max-w-md">
-                A powerful IDE designed for developing applications on the
-                Solana blockchain. Easily create, test, and deploy your smart
-                contracts with our user-friendly platform.
+                Smarter tools for everyday creators.
+              </p>
+              <p className="text-sm font-mono text-gray-300 leading-relaxed max-w-md">
+                Build faster, think clearer with AI that stays out of your way.
               </p>
             </div>
 
@@ -28,10 +31,10 @@ const Footer = () => {
               <ul className="space-y-2 text-sm font-mono">
                 <li>
                   <a
-                    href="#game"
+                    href="#"
                     className="text-gray-300 hover:text-cyber-primary transition-colors"
                   >
-                    Play IDE Demo
+                    Home
                   </a>
                 </li>
                 <li>
@@ -58,14 +61,14 @@ const Footer = () => {
                     Roadmap
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#faq"
                     className="text-gray-300 hover:text-cyber-primary transition-colors"
                   >
                     FAQ
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -77,26 +80,26 @@ const Footer = () => {
               <ul className="space-y-2 text-sm font-mono">
                 <li>
                   <a
-                    href="#addressChecker"
+                    href="#LumioGen"
                     className="text-gray-300 hover:text-cyber-primary transition-colors"
                   >
-                    Address Validator
+                    LumioGen
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#analytics"
+                    href="#VisionLight"
                     className="text-gray-300 hover:text-cyber-primary transition-colors"
                   >
-                    Transaction Analytics
+                    VisionLight
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#Debugging"
+                    href="#SyntaxGlow"
                     className="text-gray-300 hover:text-cyber-primary transition-colors"
                   >
-                    Debugging Tools
+                    SyntaxGlow
                   </a>
                 </li>
                 <li>
@@ -115,9 +118,14 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-cyber-primary/20">
             {/* Social Links */}
             <div className="flex space-x-4 mb-4 md:mb-0">
-              <a href="#" className="cyber-button text-xs px-3 py-2">
+              <Link
+                href="https://x.com/useLumio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cyber-button text-xs px-3 py-2"
+              >
                 TWITTER
-              </a>
+              </Link>
               <a href="#" className="cyber-button text-xs px-3 py-2">
                 GITHUB
               </a>
@@ -146,11 +154,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center mt-8 pt-4 border-t border-cyber-primary/20">
             <p className="text-sm font-mono text-gray-400">
-              © 2025 Lumio Solana IDE. All rights reserved. |
-              <span className="text-cyber-secondary">
-                {" "}
-                Empowering developers on Solana
-              </span>
+              © 2025 Lumio AI. All rights reserved.
+              {/* <span className="text-cyber-secondary">
+                Smarter tools for everyday creators.
+              </span> */}
             </p>
           </div>
         </div>
